@@ -14,6 +14,12 @@ android {
         versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        resValue(
+            "string",
+            "survicate_workspace_key",
+            project.properties["survicate_workspace_key"] as String
+        )
     }
 
     buildTypes {
@@ -46,6 +52,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.3.1")
     implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.1")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("com.survicate:survicate-sdk:1.4.3")
 
     testImplementation("junit:junit:4.13.2")
 
