@@ -1,8 +1,4 @@
 <resources>
-    <string name="app_name">Spike Survicate</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="go_home">Ir Home</string>
-    <string name="clean_survicate">Limpiar Survicate</string>
-
+    <string name="go_survey_home">Go Survey Home</string>
+    <string name="reset_survicate">Reset Survicate</string>
 </resources>

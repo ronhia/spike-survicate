@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.ronha.spike.survicate.base.BaseFragment
 import com.ronha.spike.survicate.databinding.FragmentMainBinding
 import com.ronha.spike.survicate.home.HomeActivity
+import com.ronha.spike.survicate.utils.toast
 import com.survicate.surveys.Survicate
 
 class MainFragment : BaseFragment<FragmentMainBinding>() {
@@ -25,12 +26,13 @@ class MainFragment : BaseFragment<FragmentMainBinding>() {
     }
 
     private fun events() {
-        binding.mainBtnGoHome.setOnClickListener {
+        binding.mainBtnGoSurveyHome.setOnClickListener {
             val intent = Intent(requireContext(), HomeActivity::class.java)
             startActivity(intent)
         }
-        binding.mainBtnCleanSurvicate.setOnClickListener {
+        binding.mainBtnResetSurvicate.setOnClickListener {
             Survicate.reset()
+            toast("Survicate reset")
         }
     }
 

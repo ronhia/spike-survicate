@@ -16,7 +16,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
         val fm = supportFragmentManager
         val transaction = fm.beginTransaction()
-        transaction.replace(R.id.main_fl_container, MainFragment.newInstance())
+        transaction.replace(R.id.main_fl_container, MainFragment.newInstance(), MainFragment.TAG)
         transaction.commit()
     }
 }

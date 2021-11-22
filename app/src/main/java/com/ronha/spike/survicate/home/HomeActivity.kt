@@ -11,7 +11,7 @@ import com.survicate.surveys.SurvicateEventListener
 class HomeActivity : BaseActivity<ActivityHomeBinding>() {
 
     companion object {
-        const val SCREEN_NAME = "rutadeldia"
+        const val SCREEN_NAME = "screen_home"
     }
 
     override fun getActivityBinding(): ActivityHomeBinding {

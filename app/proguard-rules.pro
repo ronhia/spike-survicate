@@ -19,3 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# SURVICATE
+-keep @com.squareup.moshi.JsonQualifier class *
+-keep public class com.survicate.surveys.entities.**
+-keep public class com.survicate.surveys.infrastructure.network.**
+-keep public class com.survicate.surveys.infrastructure.serialization.**

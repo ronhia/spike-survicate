@@ -7,23 +7,23 @@
     tools:context=".main.MainFragment">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_btn_goHome"
+        android:id="@+id/main_btn_goSurveyHome"
         android:layout_width="wrap_content"
         android:layout_height="56dp"
-        android:text="@string/go_home"
+        android:text="@string/go_survey_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_btn_cleanSurvicate"
+        android:id="@+id/main_btn_resetSurvicate"
         android:layout_width="wrap_content"
         android:layout_height="56dp"
         android:layout_marginTop="16dp"
-        android:text="@string/clean_survicate"
+        android:text="@string/reset_survicate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_btn_goHome" />
+        app:layout_constraintTop_toBottomOf="@id/main_btn_goSurveyHome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
