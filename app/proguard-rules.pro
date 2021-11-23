@@ -20,8 +20,22 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-# SURVICATE
+# MOSHI for SURVICATE
+-dontwarn javax.annotation.**
+-keepclasseswithmembers class * {
+    @com.squareup.moshi.* <methods>;
+}
 -keep @com.squareup.moshi.JsonQualifier class *
--keep public class com.survicate.surveys.entities.**
+-keep @com.squareup.moshi.JsonQualifier interface *
+-keepclassmembers @com.squareup.moshi.JsonClass class * extends java.lang.Enum {
+    <fields>;
+    **[] values();
+}
+-keepclassmembers class com.squareup.moshi.internal.Util {
+    private static java.lang.String getKotlinMetadataClassName();
+}
+
+# SURVICATE
+-keep public class com.survicate.surveys.entities.** { *; }
 -keep public class com.survicate.surveys.infrastructure.network.**
 -keep public class com.survicate.surveys.infrastructure.serialization.**

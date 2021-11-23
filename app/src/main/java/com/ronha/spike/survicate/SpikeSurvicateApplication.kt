@@ -11,6 +11,6 @@ class SpikeSurvicateApplication : Application() {
     }
 
     private fun initSurvicate() {
-        Survicate.init(this)
+        Survicate.init(this, true)
     }
 }
